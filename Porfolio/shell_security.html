@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell Security Research</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            display: flex;
+            align-items: center; /* Align items vertically */
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        aside {
+            margin-right: 15px; /* Add space between image and text */
+        }
+        aside img {
+            border-radius: 100%; /* Optional: Makes the image circular */
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shell Security Research</h1>
+        <div style="margin-left: auto;">
+            <p style="margin-right: 10px;">
+                <a href="https://github.com/zekebranham" target="_blank">GitHub</a> | 
+                <a href="https://linkedin.com/in/marlonezekielbranham" target="_blank">LinkedIn</a>
+            </p>
+            <p>
+                Phone: (480) 773-4300<br>
+                Email: <a href="mailto:zekebranham@mail.fresnostate.edu">zekebranham@mail.fresnostate.edu</a> <br>
+                Resume: <a href="assets/Resume.pdf" target="_blank">Resume</a>
+            </p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="fingerprint.html">Fingerprint Recognition</a>
+        <a href="splunk.html">Splunk Threat Analysis</a>
+        <a href="wireshark.html">Networking and Protocols Studies</a>
+    </nav>
+
+    <main>
+        <h2>Overview</h2>
+        <p>
+            My research and practical work in shell security focuses on understanding and exploiting various attack vectors, including:
+        </p>
+        <ul>
+            <li>Shellshock vulnerability</li>
+            <li>Cross-Site Request Forgery (CSRF)</li>
+            <li>Cross-Site Scripting (XSS)</li>
+            <li>Buffer Overflow attacks</li>
+            <li>Encryption and Public Key</li>
+        </ul>
+        <p>
+            These studies have been instrumental in uncovering system vulnerabilities and developing mitigation strategies to protect systems against such threats. All experimentation and research was completed with Oracle VirtualBox using a Linux environment.
+        </p>
+
+        <h2>Research Highlights</h2>
+        <ul>
+            <li>
+                <strong>Shellshock Exploit:</strong> Demonstrated how environment variable injection can be used to compromise vulnerable Bash versions. Experimented with creating files and executing commands via crafted HTTP headers.
+            </li>
+            <li>
+                <strong>CSRF Protection:</strong> Investigated the role of same-site cookies and CSRF tokens in mitigating attacks that exploit browser trust mechanisms.
+            </li>
+            <li>
+                <strong>XSS Worms:</strong> Developed a self-propagating XSS worm to understand the impact of malicious JavaScript in web applications.
+            </li>
+            <li>
+                <strong>Buffer Overflow:</strong> Designed payloads to exploit memory vulnerabilities, emphasizing the importance of stack protection mechanisms.
+            </li>
+        </ul>
+
+        <h2>Supporting Documentation</h2>
+        <p>
+            Detailed documentation for each of these experiments is available in the following reports:
+        </p>
+        <ul>
+            <li><a href="assets/CSRFxss.pdf" target="_blank">CSRF and XSS Research and Implementation</a></li>
+
+            <li><a href="assets/ShellshockBufferOverflow.pdf" target="_blank">Shellshock and Buffer Overflow Exploit Research</a></li>
+            <li><a href="assets/Encryption.pdf" target="_blank">Encryption and Secure Hashing Practices Research</a></li>
+            <li><a href="assets/EnvVars.pdf" target="_blank">Exploring Environment Variables within a Linux shell.</a></li>
+
+        </ul>
+
+    <footer>
+        <p>&copy; 2025 Marlon | Cyber Defense Portfolio</p>
+    </footer>
+</body>
+</html>

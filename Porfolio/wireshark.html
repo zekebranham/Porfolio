@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireshark Studies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            display: flex;
+            align-items: center; /* Align items vertically */
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        aside {
+            margin-right: 15px; /* Add space between image and text */
+        }
+        aside img {
+            border-radius: 100%; /* Optional: Makes the image circular */
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wireshark Studies</h1>
+        <div style="margin-left: auto;">
+            <p style="margin-right: 10px;">
+                <a href="https://github.com/zekebranham" target="_blank">GitHub</a> | 
+                <a href="https://linkedin.com/in/marlonezekielbranham" target="_blank">LinkedIn</a>
+            </p>
+            <p>
+                Phone: (480) 773-4300<br>
+                Email: <a href="mailto:zekebranham@mail.fresnostate.edu">zekebranham@mail.fresnostate.edu</a> <br>
+                Resume: <a href="assets/Resume.pdf" target="_blank">Resume</a>
+            </p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="fingerprint.html">Fingerprint Recognition</a>
+        <a href="splunk.html">Splunk Threat Analysis</a>
+        <a href="shell_security.html">Shell Security</a>
+    </nav>
+
+    <main>
+        <h2>Overview</h2>
+        <p>
+            My hands-on experience with Wireshark has allowed me to delve deeply into the analysis of network packets, uncovering the intricacies of protocols such as Ethernet, HTTP, IP, and TCP. Through extensive lab work, I’ve gained a profound understanding of how these protocols interact and their significance in network communication.
+        </p>
+
+        <h2>Key Studies</h2>
+        <ul>
+            <li><strong>Ethernet:</strong> Investigated frame structures, including source and destination MAC addresses, and the role of the Frame Type field in identifying upper-layer protocols.</li>
+            <li><strong>HTTP:</strong> Analyzed HTTP requests and responses, status codes, and header details to understand web traffic and server communication.</li>
+            <li><strong>IP:</strong> Examined IP header fields, fragmentation, and payload sizes to explore the data transmission process at the network layer.</li>
+            <li><strong>TCP:</strong> Explored TCP handshake processes, sequence and acknowledgment numbers, retransmissions, and round-trip time (RTT) calculations.</li>
+        </ul>
+
+        <h2>Lab Highlights</h2>
+        <ul>
+            <li>
+                <strong>Ethernet Analysis:</strong> Identified key fields such as source and destination MAC addresses and examined ARP requests and replies.
+                <a href="assets/ETHERNET.pdf" target="_blank">View Ethernet Lab Report</a>
+            </li>
+            <li>
+                <strong>HTTP Traffic:</strong> Tracked GET and POST requests, analyzed HTTP headers, and examined server responses.
+                <a href="assets/HTTP.pdf" target="_blank">View HTTP Lab Report</a>
+            </li>
+            <li>
+                <strong>IP Packet Analysis:</strong> Studied header fields, including TTL and fragmentation details, and assessed their impact on data delivery.
+                <a href="assets/IP.pdf" target="_blank">View IP Lab Report</a>
+            </li>
+            <li>
+                <strong>TCP Behavior:</strong> Investigated sequence numbers, RTT values, and congestion control mechanisms.
+                <a href="assets/TCP.pdf" target="_blank">View TCP Lab Report</a>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Marlon | Cyber Defense Portfolio</p>
+    </footer>
+</body>
+</html>

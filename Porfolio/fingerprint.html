@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fingerprint Recognition Software</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            display: flex;
+            align-items: center; /* Align items vertically */
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        aside {
+            margin-right: 15px; /* Add space between image and text */
+        }
+        aside img {
+            border-radius: 100%; /* Optional: Makes the image circular */
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+        display: flex;
+        }
+
+        /* Create three equal columns that sits next to each other */
+        .column {
+        flex: 33.33%;
+        padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fingerprint Recognition Software</h1>
+        <div style="margin-left: auto;">
+            <p style="margin-right: 10px;">
+                <a href="https://github.com/zekebranham" target="_blank">GitHub</a> | 
+                <a href="https://linkedin.com/in/marlonezekielbranham" target="_blank">LinkedIn</a>
+            </p>
+            <p>
+                Phone: (480) 773-4300<br>
+                Email: <a href="mailto:zekebranham@mail.fresnostate.edu">zekebranham@mail.fresnostate.edu</a> <br>
+                Resume: <a href="assets/Resume.pdf" target="_blank">Resume</a>
+            </p>
+        </div>
+        
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="splunk.html">Splunk Threat Analysis</a>
+        <a href="shell_security.html">Shell Security</a>
+        <a href="wireshark.html">Networking and Protocols Studies</a>
+    </nav>
+
+    <main>
+        <h2>Project Summary</h2>
+        <p>
+            This project introduces a novel fingerprint recognition algorithm using a High-Density Grid-Based Matching technique. Unlike traditional methods that store an entire fingerprint image, this algorithm focuses on high-density minutiae grids, which significantly reduce the storage needed for sensitive data while improving the robustness, security, and speed of the system.
+        </p>
+
+        <h2>Key Highlights</h2>
+        <ul>
+            <li>
+                **Storage Efficiency**: Only a fraction of the fingerprint image is stored being the top seven 80x80 pixel high-density segment regions of the fingerprint. In all, reducing data storage requirements and enhancing data security.
+            </li>
+            <li>
+                **Improved Security**: By storing the high-density minutiae areas, the sensitive data storage mitigates risks associated with compromised biometric data.
+            </li>
+            <li>
+                **Performance Gains**: Processing speed increased by 20-30% due to optimized focus on critical regions of the fingerprint.
+            </li>
+        </ul>
+
+        <div class="row">
+            <div class="column">
+              <img src="/assets/ProcessingTimesFP.png" alt="Grid-Based Fingerprint Segmentation" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="/assets/FPChart.png" alt="High-Density Grids Visualization" style="width:100%">
+            </div>
+          </div>
+
+        <h2>Research Contribution</h2>
+        <p>
+            The research paper for this project, "High-Density Grid-Based Matching Versus Global Matching," follows the IEEE format and provides a detailed methodology, results, and comparative analysis. The algorithm demonstrates improved processing efficiency and security, making it a viable solution for real-world biometric systems.
+        </p>
+        <p><a href="/assets/High-Density-Grid-Based-Matching IEEE.pdf" target="_blank">View the Research Paper</a></p>
+
+        <h2>Repository</h2>
+        <p>
+            <a href="https://github.com/zekebranham/High-Density-Grid-Based-Fingerprint-Matching" target="_blank">High-Density Grid-Based Fingerprint Matching Repository</a>
+        </p>
+        
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Marlon | Cyber Defense Portfolio</p>
+    </footer>
+</body>
+</html>
