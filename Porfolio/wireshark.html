@@ -15,16 +15,18 @@
         }
         header {
             display: flex;
-            align-items: center; /* Align items vertically */
+            flex-wrap: wrap;
+            align-items: center;
             background-color: #333;
             color: white;
             padding: 10px;
         }
-        aside {
-            margin-right: 15px; /* Add space between image and text */
-        }
         aside img {
-            border-radius: 100%; /* Optional: Makes the image circular */
+            width: 100px;
+            border-radius: 50%;
+        }
+        div {
+            flex: 1;
         }
         nav {
             text-align: center;
@@ -33,8 +35,10 @@
         nav a {
             text-decoration: none;
             color: #333;
-            margin: 0 1rem;
+            margin: 0 0.5rem;
             font-weight: bold;
+            display: inline-block;
+            white-space: nowrap;
         }
         nav a:hover {
             color: #007BFF;
@@ -53,12 +57,45 @@
             font-size: 0.9rem;
             color: #777;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 1rem 0;
+    
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            aside img {
+                margin: 0 auto;
+            }
+            div:last-child {
+                margin-left: 0;
+                text-align: center;
+            }
+            div:last-child p {
+                margin: 0.5rem 0;
+            }
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            header {
+                padding: 5px;
+            }
+            aside img {
+                width: 80px;
+            }
+            main {
+                padding: 0.5rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
         }
     </style>
+
 </head>
 <body>
     <header>
