@@ -15,11 +15,16 @@
         }
         header {
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
+            justify-content: space-between; /* Distribute space between header elements */
             background-color: #333;
             color: white;
             padding: 10px;
+        }
+        
+        div:last-child {
+            margin-left: auto; /* Push the links to the right */
+            text-align: right; /* Align text to the right */
         }
         aside img {
             width: 100px;
