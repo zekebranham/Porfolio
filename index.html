@@ -5,93 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marlon's Cyber Defense Portfolio</title>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f9;
-        color: #333;
-    }
-    header {
-        display: flex;
-        flex-wrap: wrap; /* Allow items to wrap for smaller screens */
-        align-items: center;
-        background-color: #333;
-        color: white;
-        padding: 10px;
-    }
-    aside img {
-        width: 100px; /* Reduce image size for better scaling */
-        border-radius: 50%;
-    }
-    div {
-        flex: 1;
-    }
-    nav {
-        text-align: center;
-        margin: 1rem 0;
-    }
-    nav a {
-        text-decoration: none;
-        color: #333;
-        margin: 0 0.5rem; /* Reduce margin for narrower screens */
-        font-weight: bold;
-        display: inline-block;
-        white-space: nowrap; /* Prevent links from wrapping */
-    }
-    nav a:hover {
-        color: #007BFF;
-    }
-    main {
-        max-width: 800px;
-        margin: 2rem auto;
-        padding: 1rem;
-        background: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    footer {
-        text-align: center;
-        margin: 2rem 0;
-        font-size: 0.9rem;
-        color: #777;
-    }
-
-    /* Responsive Design for Smaller Screens */
-    @media (max-width: 768px) {
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
         header {
-            flex-direction: column; /* Stack elements vertically */
-            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
         }
         aside img {
-            margin: 0 auto; /* Center the image */
+            width: 100px;
+            border-radius: 50%;
         }
         div {
-            margin-left: 0;
-            margin-right: 0;
+            flex: 1;
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
         }
         nav a {
-            display: block; /* Stack links vertically */
-            margin: 0.5rem 0;
+            text-decoration: none;
+            color: #333;
+            margin: 0 0.5rem;
+            font-weight: bold;
+            display: inline-block;
+            white-space: nowrap;
         }
-    }
-
-    @media (max-width: 480px) {
-        header {
-            padding: 5px;
-        }
-        aside img {
-            width: 80px; /* Further reduce image size */
+        nav a:hover {
+            color: #007BFF;
         }
         main {
-            padding: 0.5rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        nav a {
-            font-size: 0.9rem; /* Reduce font size for very small screens */
+        footer {
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+            color: #777;
         }
-    }
-</style>
+    
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            aside img {
+                margin: 0 auto;
+            }
+            div:last-child {
+                margin-left: 0;
+                text-align: center;
+            }
+            div:last-child p {
+                margin: 0.5rem 0;
+            }
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            header {
+                padding: 5px;
+            }
+            aside img {
+                width: 80px;
+            }
+            main {
+                padding: 0.5rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
 </head>
 <body>
     
