@@ -5,59 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marlon's Cyber Defense Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+    header {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+    }
+    aside img {
+        width: 100px; /* Reduce image size for better scaling */
+        border-radius: 50%;
+    }
+    div {
+        flex: 1;
+    }
+    nav {
+        text-align: center;
+        margin: 1rem 0;
+    }
+    nav a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 0.5rem; /* Reduce margin for narrower screens */
+        font-weight: bold;
+        display: inline-block;
+        white-space: nowrap; /* Prevent links from wrapping */
+    }
+    nav a:hover {
+        color: #007BFF;
+    }
+    main {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 0.9rem;
+        color: #777;
+    }
+
+    /* Responsive Design for Smaller Screens */
+    @media (max-width: 768px) {
         header {
-            display: flex;
-            align-items: center; /* Align items vertically */
-            background-color: #333;
-            color: white;
-            padding: 10px;
-        }
-        aside {
-            margin-right: 15px; /* Add space between image and text */
+            flex-direction: column; /* Stack elements vertically */
+            text-align: center;
         }
         aside img {
-            width: 200px; 
-            border-radius: 100%;/* Optional: Makes the image circular */
+            margin: 0 auto; /* Center the image */
         }
         div {
-            flex: 1; /* Allows the text content to take up the remaining space */
-        }
-        nav {
-            text-align: center;
-            margin: 1rem 0;
+            margin-left: 0;
+            margin-right: 0;
         }
         nav a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 1rem;
-            font-weight: bold;
+            display: block; /* Stack links vertically */
+            margin: 0.5rem 0;
         }
-        nav a:hover {
-            color: #007BFF;
+    }
+
+    @media (max-width: 480px) {
+        header {
+            padding: 5px;
+        }
+        aside img {
+            width: 80px; /* Further reduce image size */
         }
         main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem;
         }
-        footer {
-            text-align: center;
-            margin: 2rem 0;
-            font-size: 0.9rem;
-            color: #777;
+        nav a {
+            font-size: 0.9rem; /* Reduce font size for very small screens */
         }
-    </style>
+    }
+</style>
 </head>
 <body>
     
